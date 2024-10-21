@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton's Third Law Simulation</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Newton's Third Law Simulation: Action and Reaction</h1>
+
+    <div class="instructions">
+        <p>According to Newton's Third Law: "For every action, there is an equal and opposite reaction."</p>
+        <p>Click the button to see how two objects exert equal and opposite forces when a force is applied!</p>
+    </div>
+
+    <div class="simulation-container">
+        
+        <div id="object1" class="object">
+            <div class="label">Object A</div>
+        </div>
+
+        <div id="object2" class="object">
+            <div class="label">Object B</div>
+        </div>
+    </div>
+
+   
+    <div class="controls">
+      
+        <button onclick="applyForce()">Apply Force</button>
+
+        
+        <div class="input-controls">
+            <label for="mass1">Mass of Object A (kg):</label>
+            <input type="number" id="mass1" value="5">
+            
+            <label for="mass2">Mass of Object B (kg):</label>
+            <input type="number" id="mass2" value="5">
+            
+            <label for="force">Applied Force (N):</label>
+            <input type="number" id="force" value="10">
+        </div>
+    </div>
+
+    
+    <div class="info">
+        <p id="message">Click the button to apply a force and see the results!</p>
+        <div id="result">
+            <p id="velocityA">Velocity of Object A: 0 m/s</p>
+            <p id="velocityB">Velocity of Object B: 0 m/s</p>
+        </div>
+    </div>
+
+    
+    <script src="Javascript.js"></script>
+</body>
+</html>
